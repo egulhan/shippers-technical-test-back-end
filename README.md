@@ -10,6 +10,8 @@
 
 ```
 composer install
+cp .env.example .env
+php artisan key:generate
 ```
 
 3. Create a database on your MySQL server and update database environment variables in .env file based on your database
