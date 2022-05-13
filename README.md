@@ -14,10 +14,18 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-3. Create a database on your MySQL server and update database environment variables in .env file based on your database
+3. Create a database on your MySQL server and update database environment variables (like below) in .env file based on your database
    settings.<br><br>
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3307
+DB_DATABASE=shippers
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-4. Migrate the migration files by running the following command:
+5. Migrate the migration files by running the following command:
 
 ```
 php artisan migrate
